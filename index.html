@@ -3,145 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NEGO PROD — креативные концепты, CGI, motion и контент для брендов.">
+  <meta name="description" content="NEGO PROD — creative production, CGI, motion and visual concepts.">
   <meta name="theme-color" content="#080808">
   <title>NEGO PROD — Creative Production</title>
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script src="script.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="script.js?v=4" defer></script>
 </head>
 <body>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="NEGO PROD — на главную"><b>N</b><span>NEGO<br>PROD</span></a>
-    <nav class="desktop-nav" aria-label="Основная навигация">
-      <a href="#services">Услуги</a><a href="#work">Работы</a><a href="#process">Процесс</a><a href="#about">Обо мне</a>
-    </nav>
-    <a class="header-cta" href="#brief">Обсудить проект <span>↗</span></a>
-    <button class="menu-button" aria-label="Открыть меню"><span></span><span></span></button>
+  <header class="header">
+    <a class="logo" href="#top">NEGO PROD</a>
+    <nav><a href="#services">Услуги</a><a href="#work">Работы</a><a href="#about">Студия</a></nav>
+    <a class="contact-link" href="#contact">Обсудить проект ↗</a>
+    <button class="menu" aria-label="Открыть меню"><span></span><span></span></button>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-orb" aria-hidden="true"></div>
+      <div class="grid-bg"></div>
 
-      <div class="float-card card-left" aria-hidden="true">
-        <video src="assets/hero-01.mp4" autoplay muted loop playsinline></video>
-        <div><b>Obladaet</b><span>Fashion CGI / 2026</span></div>
-      </div>
-      <div class="float-card card-right" aria-hidden="true">
-        <video src="assets/hero-02.mp4" autoplay muted loop playsinline></video>
-        <div><b>Measure</b><span>Product concept / 2026</span></div>
-      </div>
-      <div class="float-card card-bottom" aria-hidden="true">
-        <video src="assets/hero-03.mp4" autoplay muted loop playsinline></video>
-        <div><b>Dark Matter</b><span>Material study / 2026</span></div>
+      <article class="floating-work work-cap">
+        <img src="assets/work-01.jpg" alt="Black cap concept">
+        <span>001 / CAP</span>
+      </article>
+      <article class="floating-work work-belt">
+        <img src="assets/work-02.jpg" alt="Measure belt concept">
+        <span>002 / MEASURE</span>
+      </article>
+      <article class="floating-work work-hat">
+        <img src="assets/work-03.jpg" alt="Bucket hat concept">
+        <span>003 / HAT</span>
+      </article>
+      <article class="floating-work work-garment">
+        <img src="assets/work-04.jpg" alt="Garment concept">
+        <span>004 / GARMENT</span>
+      </article>
+
+      <div class="hero-center">
+        <h1>NEGO<br>PROD</h1>
+        <p>Creative production studio<br>CGI · Motion · Concepts</p>
+        <a href="#work">View work ↘</a>
       </div>
 
-      <div class="hero-content">
-        <div class="hero-label"><i></i> Independent creative production</div>
-        <h1>Создаю визуалы,<br>которые хочется<br><em>пересмотреть</em></h1>
-        <p>NEGO PROD — концепты, CGI, дизайн и короткие видео для брендов, артистов и пространств.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Смотреть работы <span>↓</span></a>
-          <a class="button button-ghost" href="#brief">Обсудить проект <span>↗</span></a>
-        </div>
-      </div>
-
-      <div class="hero-stats">
-        <div><strong>04</strong><span>направления<br>в одном продакшене</span></div>
-        <div><strong>9:16</strong><span>social-first<br>мышление</span></div>
-        <div><strong>01</strong><span>идея →<br>готовый визуал</span></div>
-      </div>
+      <div class="hero-foot"><span>Independent studio</span><span>Moscow / Worldwide</span><span>2026</span></div>
     </section>
 
-    <div class="ticker" aria-label="Направления работы">
-      <div class="ticker-track"><span>CREATIVE DIRECTION</span><i>✦</i><span>CGI / 3D</span><i>✦</i><span>MOTION</span><i>✦</i><span>SOCIAL CONTENT</span><i>✦</i><span>ART DIRECTION</span><i>✦</i><span>CREATIVE DIRECTION</span><i>✦</i><span>CGI / 3D</span><i>✦</i><span>MOTION</span><i>✦</i><span>SOCIAL CONTENT</span></div>
-    </div>
-
     <section class="services section" id="services">
-      <div class="section-intro reveal">
-        <div class="section-tag">01 / Услуги</div>
-        <div><h2>Задачи, которые<br><em>можно решить</em></h2><p>Не продаю отдельный инструмент. Подбираю визуальный язык под идею, площадку и аудиторию.</p></div>
-      </div>
-      <div class="service-grid">
-        <article class="service-card reveal"><div class="card-number">01</div><div class="service-icon">◎</div><h3>Креативная<br>концепция</h3><p>Идея, визуальная система, референсы и сценарий, которые собирают проект до начала продакшена.</p><div class="tags"><span>Idea</span><span>Research</span><span>Art direction</span></div><a href="#brief">Обсудить задачу ↗</a></article>
-        <article class="service-card reveal"><div class="card-number">02</div><div class="service-icon">◫</div><h3>CGI / 3D<br>production</h3><p>Предметные визуалы, digital-fashion, невозможные продукты и изображения для кампаний.</p><div class="tags"><span>CGI</span><span>3D</span><span>Compositing</span></div><a href="#brief">Обсудить задачу ↗</a></article>
-        <article class="service-card reveal"><div class="card-number">03</div><div class="service-icon">▶</div><h3>Motion &<br>short video</h3><p>Ролики, тизеры и вертикальные форматы для Instagram, TikTok и рекламных размещений.</p><div class="tags"><span>Reels</span><span>TikTok</span><span>Motion</span></div><a href="#brief">Обсудить задачу ↗</a></article>
-        <article class="service-card reveal"><div class="card-number">04</div><div class="service-icon">✣</div><h3>Кампания<br>под ключ</h3><p>От первой идеи до набора готовых материалов: key visual, видео и адаптации под площадки.</p><div class="tags"><span>Campaign</span><span>Design</span><span>Delivery</span></div><a href="#brief">Обсудить задачу ↗</a></article>
+      <div class="section-label">01 / Services</div>
+      <div class="services-grid">
+        <article><span>01</span><i>◎</i><h2>Creative<br>concepts</h2><p>Идея и визуальное направление.</p></article>
+        <article><span>02</span><i>◫</i><h2>CGI &<br>3D</h2><p>Продуктовые и fashion-визуалы.</p></article>
+        <article><span>03</span><i>▶</i><h2>Short<br>video</h2><p>Motion, Reels и TikTok.</p></article>
+        <article><span>04</span><i>✦</i><h2>Full<br>campaign</h2><p>От идеи до готовых материалов.</p></article>
       </div>
     </section>
 
     <section class="work section" id="work">
-      <div class="work-heading reveal"><div class="section-tag">02 / Selected work</div><h2>Кейсы, а не<br><em>просто картинки</em></h2><p>Каждая работа может стать отдельным мини-лендингом: задача, идея, процесс и финальный результат.</p></div>
-
-      <article class="featured-case reveal">
-        <div class="case-visual case-light"><img src="assets/work-02.jpg" alt="Прозрачный ремень-линейка"><div class="case-badge">Product concept</div></div>
-        <div class="case-copy"><div><span>01 / 04</span><span>2026</span></div><h3>Measure<br>Yourself</h3><p>Предметный концепт на границе аксессуара и измерительного инструмента. Чистый продуктовый визуал с сильным social-потенциалом.</p><ul><li>Concept</li><li>Art direction</li><li>CGI</li></ul><button class="case-button" data-case="measure">Открыть кейс <span>↗</span></button></div>
-      </article>
-
-      <div class="case-grid">
-        <article class="small-case reveal"><div class="small-media"><img src="assets/work-01.jpg" alt="Чёрная кепка с объёмной типографикой"><span>02</span></div><div class="small-meta"><div><h3>Obladaet / Headwear</h3><p>Fashion CGI · Direction</p></div><button class="case-button icon-only" data-case="headwear" aria-label="Открыть кейс">↗</button></div></article>
-        <article class="small-case reveal"><div class="small-media"><img src="assets/work-03.jpg" alt="Чёрная панама"><span>03</span></div><div class="small-meta"><div><h3>Dark Matter</h3><p>Material study · CGI</p></div><button class="case-button icon-only" data-case="dark" aria-label="Открыть кейс">↗</button></div></article>
-      </div>
-
-      <article class="motion-case reveal">
-        <video src="assets/hero-04.mp4" autoplay muted loop playsinline></video>
-        <div class="motion-overlay"><span>04 / Motion</span><h3>Visual<br>Experiments</h3><p>Короткие эксперименты для digital-платформ.</p><button class="case-button light-button" data-case="motion">Смотреть серию ↗</button></div>
-      </article>
-    </section>
-
-    <section class="formats section">
-      <div class="formats-head reveal"><div class="section-tag">03 / Форматы</div><h2>Можно начать<br><em>с разного масштаба</em></h2></div>
-      <div class="format-list">
-        <article class="format-row reveal"><div class="format-num">01</div><div><h3>Concept Sprint</h3><p>Быстро проверить идею и найти визуальный ход.</p></div><div class="format-details"><span>Концепция</span><span>Референсы</span><span>1 key visual</span></div><div class="format-time">от 3 дней</div><a href="#brief">↗</a></article>
-        <article class="format-row reveal"><div class="format-num">02</div><div><h3>Social Drop</h3><p>Серия вертикальных материалов под один инфоповод.</p></div><div class="format-details"><span>3–5 роликов</span><span>9:16</span><span>Адаптации</span></div><div class="format-time">от 7 дней</div><a href="#brief">↗</a></article>
-        <article class="format-row reveal"><div class="format-num">03</div><div><h3>Campaign</h3><p>Цельная визуальная кампания от идеи до выдачи.</p></div><div class="format-details"><span>Art direction</span><span>CGI / Video</span><span>Delivery</span></div><div class="format-time">по задаче</div><a href="#brief">↗</a></article>
+      <div class="work-head"><div class="section-label">02 / Selected work</div><h2>Objects<br>of intent</h2></div>
+      <div class="portfolio-grid">
+        <button class="project project-cap" data-case="headwear"><img src="assets/work-01.jpg" alt="Obladaet headwear"><span>01</span><div><b>Obladaet</b><small>Headwear / CGI</small></div></button>
+        <button class="project project-belt" data-case="measure"><img src="assets/work-02.jpg" alt="Measure Yourself"><span>02</span><div><b>Measure Yourself</b><small>Product concept</small></div></button>
+        <button class="project project-hat" data-case="dark"><img src="assets/work-03.jpg" alt="Dark Matter"><span>03</span><div><b>Dark Matter</b><small>Material study</small></div></button>
+        <button class="project project-garment" data-case="garment"><img src="assets/work-04.jpg" alt="Garment development"><span>04</span><div><b>Garment Development</b><small>Fashion CGI</small></div></button>
       </div>
     </section>
 
-    <section class="process section" id="process">
-      <div class="process-head reveal"><div class="section-tag">04 / Процесс</div><h2>От сообщения<br>до готового <em>кадра</em></h2><p>Без лишней бюрократии. На каждом этапе понятно, что происходит и какой результат мы фиксируем.</p></div>
-      <div class="process-steps">
-        <article class="reveal"><span>01</span><i>1 день</i><h3>Бриф</h3><p>Задача, аудитория, площадки, сроки и желаемый эффект.</p><b>→ направление</b></article>
-        <article class="reveal"><span>02</span><i>1–3 дня</i><h3>Концепция</h3><p>Идея, moodboard, визуальный язык и структура материалов.</p><b>→ презентация</b></article>
-        <article class="reveal"><span>03</span><i>по задаче</i><h3>Production</h3><p>CGI, съёмка, дизайн, motion и промежуточные согласования.</p><b>→ контент</b></article>
-        <article class="reveal"><span>04</span><i>1–2 дня</i><h3>Delivery</h3><p>Финальные форматы, адаптации и аккуратная передача файлов.</p><b>→ запуск</b></article>
-      </div>
+    <section class="reel">
+      <video src="assets/hero-04.mp4" autoplay muted loop playsinline></video>
+      <div><span>03 / Motion</span><h2>Play<br>the reel</h2><button id="reel-sound">Sound off</button></div>
     </section>
 
     <section class="about section" id="about">
-      <div class="about-visual reveal"><img src="assets/work-04.jpg" alt="Серия предметных визуалов одежды"><div class="about-stamp">NEGO<br>PROD<br>2026</div></div>
-      <div class="about-copy reveal"><div class="section-tag">05 / Обо мне</div><h2>Один контакт.<br>Разные <em>инструменты.</em></h2><p class="about-lead">Я собираю проекты на стыке дизайна, видео и CGI. Сам веду концепцию и арт-дирекшн, а под масштаб задачи подключаю нужных специалистов.</p>
-        <div class="accordion">
-          <details><summary>Опыт и образование <span>+</span></summary><p>Блок готов для конкретных фактов: образование, студии, бренды и профессиональный путь.</p></details>
-          <details><summary>Hard skills <span>+</span></summary><p>Creative direction, CGI, 3D, motion, compositing, editing и визуальная упаковка кампаний.</p></details>
-          <details><summary>Инструменты <span>+</span></summary><p>Blender / Cinema 4D, After Effects, Premiere Pro, Photoshop, Figma и генеративные инструменты.</p></details>
-          <details><summary>Формат сотрудничества <span>+</span></summary><p>Самостоятельный продакшен, работа внутри команды или сбор проектной команды под задачу.</p></details>
-        </div>
-      </div>
+      <div class="section-label">04 / Studio</div>
+      <p>NEGO PROD создаёт визуальные концепты для брендов, артистов и пространств.</p>
+      <div class="about-note">Один контакт.<br>Нужные инструменты.<br>Цельный результат.</div>
     </section>
 
-    <section class="brief section" id="brief">
-      <div class="brief-top reveal"><div><div class="section-tag">06 / Start a project</div><h2>Соберём идею<br>в <em>проект?</em></h2></div><p>Выбери, что примерно нужно. Получится короткий бриф, который можно отправить одним сообщением.</p></div>
-      <div class="brief-layout">
-        <div class="brief-builder reveal">
-          <div class="builder-step"><span>01</span><div><h3>Что делаем?</h3><div class="option-list" data-group="type"><button>Концепция</button><button>CGI / 3D</button><button>Короткое видео</button><button>Кампания</button></div></div></div>
-          <div class="builder-step"><span>02</span><div><h3>Для кого?</h3><div class="option-list" data-group="client"><button>Бренд</button><button>Артист</button><button>Недвижимость</button><button>Свой проект</button></div></div></div>
-          <div class="builder-step"><span>03</span><div><h3>Когда запуск?</h3><div class="option-list" data-group="time"><button>Как можно скорее</button><button>В течение месяца</button><button>Есть дата</button></div></div></div>
-        </div>
-        <aside class="brief-summary reveal"><div class="summary-label"><i></i> Короткий бриф</div><h3 id="brief-title">Новый проект</h3><p id="brief-output">Выбери параметры слева — здесь соберётся описание задачи.</p><button class="button button-primary" id="copy-brief">Скопировать бриф <span>↗</span></button><small>После копирования его можно отправить в Telegram или по почте.</small></aside>
-      </div>
+    <section class="cta section" id="contact">
+      <span>05 / Start a project</span>
+      <h2>Есть идея?</h2>
+      <a href="mailto:hello@negoprod.com">Давайте обсудим ↗</a>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-main"><div><div class="brand footer-brand"><b>N</b><span>NEGO<br>PROD</span></div><p>Concepts, CGI, motion<br>and visual direction.</p></div><a href="mailto:hello@negoprod.com">hello@negoprod.com <span>↗</span></a></div>
-    <div class="footer-bottom"><span>Instagram</span><span>Telegram</span><span>Behance</span><span>© 2026 NEGO PROD</span></div>
-  </footer>
+  <footer><span>NEGO PROD</span><div><span>Instagram</span><span>Telegram</span><span>Behance</span></div><span>© 2026</span></footer>
 
-  <div class="mobile-menu" aria-hidden="true"><nav><a href="#services">Услуги</a><a href="#work">Работы</a><a href="#process">Процесс</a><a href="#about">Обо мне</a><a href="#brief">Обсудить проект</a></nav></div>
+  <div class="mobile-nav"><a href="#services">Услуги</a><a href="#work">Работы</a><a href="#about">Студия</a><a href="#contact">Контакт</a></div>
 
-  <dialog class="case-dialog"><button class="dialog-close" aria-label="Закрыть">×</button><div class="dialog-kicker">CASE 01 / 2026</div><h2>Measure Yourself</h2><p>Продуктовый концепт, в котором повседневный аксессуар превращается в измерительный инструмент и визуальный statement.</p><img src="assets/work-02.jpg" alt=""><div class="dialog-meta"><span>Concept / Art direction / CGI</span><span>NEGO PROD · 2026</span></div></dialog>
+  <dialog class="case-dialog"><button class="close" aria-label="Закрыть">×</button><span class="case-index">CASE 01 / 2026</span><h2>Measure Yourself</h2><p>Product concept · Art direction · CGI</p><img src="assets/work-02.jpg" alt=""></dialog>
 </body>
 </html>
