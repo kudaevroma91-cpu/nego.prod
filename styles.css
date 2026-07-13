@@ -5,6 +5,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 html,body{overflow-x:hidden}
 .cursor-dot{position:fixed;z-index:120;left:0;top:0;width:5px;height:5px;border-radius:50%;background:var(--blue);pointer-events:none;transform:translate(-50%,-50%);box-shadow:0 0 12px rgba(159,201,233,.75)}
+.cursor-aura{position:fixed;z-index:0;left:0;top:0;width:760px;height:760px;border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(159,201,233,.13) 0%,rgba(159,201,233,.065) 26%,rgba(159,201,233,.018) 48%,transparent 70%);filter:blur(18px);mix-blend-mode:screen;will-change:left,top}
 .cursor-ring{position:fixed;z-index:119;left:0;top:0;width:38px;height:38px;border:1px solid rgba(255,255,255,.45);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);display:grid;place-items:center;transition:width .25s ease,height .25s ease,border-color .25s ease,background .25s ease}
 .cursor-ring span{font-size:0;letter-spacing:.12em;transition:font-size .2s ease}
 .cursor-ring.is-active{width:72px;height:72px;border-color:rgba(159,201,233,.75);background:rgba(8,8,8,.45);backdrop-filter:blur(3px)}
@@ -32,4 +33,4 @@ html,body{overflow-x:hidden}
 @keyframes cube-shift{to{transform:rotate(8deg) translateY(-5px)}}
 @keyframes play-slide{50%{transform:translateX(4px);filter:drop-shadow(0 0 7px var(--blue))}}
 @keyframes campaign-scale{to{transform:rotate(45deg) scale(.55);opacity:.3}}
-@media(max-width:650px),(pointer:coarse){.cursor-dot,.cursor-ring{display:none}.hero-light{width:300px;height:300px}.scan-line{opacity:.35}}
+@media(max-width:650px),(pointer:coarse){.cursor-aura,.cursor-dot,.cursor-ring{display:none}.hero-light{width:300px;height:300px}.scan-line{opacity:.35}}

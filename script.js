@@ -44,10 +44,13 @@ document.querySelectorAll('.services-grid article,.project,.about>p,.cta h2').fo
 
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorRing = document.querySelector('.cursor-ring');
+const cursorAura = document.querySelector('.cursor-aura');
 let mouseX = innerWidth / 2;
 let mouseY = innerHeight / 2;
 let ringX = mouseX;
 let ringY = mouseY;
+let auraX = mouseX;
+let auraY = mouseY;
 
 window.addEventListener('pointermove', event => {
   mouseX = event.clientX;
@@ -59,8 +62,12 @@ window.addEventListener('pointermove', event => {
 function animateCursor() {
   ringX += (mouseX - ringX) * .16;
   ringY += (mouseY - ringY) * .16;
+  auraX += (mouseX - auraX) * .075;
+  auraY += (mouseY - auraY) * .075;
   cursorRing.style.left = `${ringX}px`;
   cursorRing.style.top = `${ringY}px`;
+  cursorAura.style.left = `${auraX}px`;
+  cursorAura.style.top = `${auraY}px`;
   requestAnimationFrame(animateCursor);
 }
 animateCursor();
