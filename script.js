@@ -41,3 +41,35 @@ document.querySelectorAll('.services-grid article,.project,.about>p,.cta h2').fo
   element.classList.add('reveal');
   observer.observe(element);
 });
+
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorRing = document.querySelector('.cursor-ring');
+let mouseX = innerWidth / 2;
+let mouseY = innerHeight / 2;
+let ringX = mouseX;
+let ringY = mouseY;
+
+window.addEventListener('pointermove', event => {
+  mouseX = event.clientX;
+  mouseY = event.clientY;
+  cursorDot.style.left = `${mouseX}px`;
+  cursorDot.style.top = `${mouseY}px`;
+});
+
+function animateCursor() {
+  ringX += (mouseX - ringX) * .16;
+  ringY += (mouseY - ringY) * .16;
+  cursorRing.style.left = `${ringX}px`;
+  cursorRing.style.top = `${ringY}px`;
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+
+document.querySelectorAll('a,button').forEach(element => {
+  element.addEventListener('pointerenter', () => cursorRing.classList.add('is-active'));
+  element.addEventListener('pointerleave', () => cursorRing.classList.remove('is-active'));
+});
+document.querySelectorAll('.project').forEach(element => {
+  element.addEventListener('pointerenter', () => cursorRing.classList.add('is-project'));
+  element.addEventListener('pointerleave', () => cursorRing.classList.remove('is-project'));
+});
